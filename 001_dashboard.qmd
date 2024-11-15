@@ -1,0 +1,13 @@
+--- 
+title: "Emisiones de CO2 " 
+author: "G. Barrios" 
+format: dashboard
+--- 
+
+## Uno
+Texto UNO
+
+## Dos
+
+Texto DOS
+

@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "Creando tableros con Quarto y ChatGPT",
+    "section": "",
+    "text": "ObjetivoContenidoProducto del taller\n\n\nExplorar una nueva tecnología como Quarto para la creación de tableros de datos, evidenciaremos las limitaciones en la actualización de los LLM como ChatGPT.\n\n\n\nInstalar Python\nInstalar Quarto\n\nInstalar VSCode y la extensión de Quarto\nCrear un tablero básico sobre emisiones de CO2 con la ayuda de ChatGPT\nPublicar el tablero en github\n\n\n\nUn tablero de datos publicado en github creado con la asistencia de ChatGPT."
+  },
+  {
+    "objectID": "index.html#me-presento",
+    "href": "index.html#me-presento",
+    "title": "Creando tableros con Quarto y ChatGPT",
+    "section": "Me presento",
+    "text": "Me presento\n\n\n\n\n\n\nEntusiasta de las tecnologías\nEntusiasta de las visualizaciones\nEntusiasta del café\nEntusiasta de los datos\nEntusiasta de la documentación\nInvestigador en el IER-UNAM en mi tiempo libre\n\n\nAltamarMx.github.io"
+  },
+  {
+    "objectID": "index.html#programa-de-especialización-en-python",
+    "href": "index.html#programa-de-especialización-en-python",
+    "title": "Creando tableros con Quarto y ChatGPT",
+    "section": "Programa de especialización en Python",
+    "text": "Programa de especialización en Python\n Python: de cero a analista"
+  },
+  {
+    "objectID": "index.html#quién-guste-presentarse",
+    "href": "index.html#quién-guste-presentarse",
+    "title": "Creando tableros con Quarto y ChatGPT",
+    "section": "Quién guste presentarse",
+    "text": "Quién guste presentarse\nPor el chat, o levantando manita para abrir micro  \n\nNombre\nCarrera\nLenguaje de programación\nExpectativa sobre el taller\n¿Conocías Quarto?"
+  },
+  {
+    "objectID": "index.html#qué-es-un-tablero",
+    "href": "index.html#qué-es-un-tablero",
+    "title": "Creando tableros con Quarto y ChatGPT",
+    "section": "¿Qué es un tablero?",
+    "text": "¿Qué es un tablero?"
+  },
+  {
     "objectID": "index.html#qué-es-quarto",
     "href": "index.html#qué-es-quarto",
     "title": "Creando tableros con Quarto y ChatGPT",
@@ -11,76 +46,76 @@
     "href": "index.html#chatgpt-se-queda-corto",
     "title": "Creando tableros con Quarto y ChatGPT",
     "section": "ChatGPT se queda CORTO",
-    "text": "ChatGPT se queda CORTO\nEs un sistema de publicación técnico de documentos enfocado:\n\nciencia de datos\nreproducibilidad\nmultiples formatos\nespecializado"
+    "text": "ChatGPT se queda CORTO\n\nEs un sistema de publicación técnico de documentos enfocado:\n\nciencia de datos\nreproducibilidad\nmultiples formatos\nespecializado"
   },
   {
     "objectID": "index.html#algunas-de-sus-características",
     "href": "index.html#algunas-de-sus-características",
     "title": "Creando tableros con Quarto y ChatGPT",
     "section": "Algunas de sus características",
-    "text": "Algunas de sus características\nMe permite escribir en \\(\\LaTeX\\), con ecuaciones como: \\[ \\rho c \\frac{\\partial T}{\\partial t} = -k \\frac{\\partial T}{\\partial x^2 } \\]"
+    "text": "Algunas de sus características\n \nMe permite escribir en \\(\\LaTeX\\), con ecuaciones como:\n\\[ \\rho c \\frac{\\partial T}{\\partial t} = -k \\frac{\\partial T}{\\partial x^2 } \\]"
   },
   {
     "objectID": "index.html#algunas-de-sus-características-1",
     "href": "index.html#algunas-de-sus-características-1",
     "title": "Creando tableros con Quarto y ChatGPT",
     "section": "Algunas de sus características",
-    "text": "Algunas de sus características\nHacer referencias bibiográficas como citar al padre de \\(\\LaTeX\\) (Lamport 1986)."
+    "text": "Algunas de sus características\n  Hacer referencias bibiográficas como citar al padre de \\(\\LaTeX\\) (Lamport 1986)."
   },
   {
-    "objectID": "index.html#bienvenida-e-introducción",
-    "href": "index.html#bienvenida-e-introducción",
+    "objectID": "index.html#algunas-de-sus-características-2",
+    "href": "index.html#algunas-de-sus-características-2",
     "title": "Creando tableros con Quarto y ChatGPT",
-    "section": "Bienvenida e Introducción",
-    "text": "Bienvenida e Introducción\n\nPresentación del facilitador y de los participantes.\nRepaso de los objetivos y agenda del taller.\nExpectativas de los asistentes."
+    "section": "Algunas de sus características",
+    "text": "Algunas de sus características\nCreación de:\n\nArtículos y reportes\nPresentaciones\nSitios web\nLibros\nTableros"
   },
   {
-    "objectID": "index.html#introducción-a-quarto",
-    "href": "index.html#introducción-a-quarto",
+    "objectID": "index.html#algunas-de-sus-características-3",
+    "href": "index.html#algunas-de-sus-características-3",
     "title": "Creando tableros con Quarto y ChatGPT",
-    "section": "Introducción a Quarto",
-    "text": "Introducción a Quarto\n\n¿Qué es Quarto?\n\nPlataforma unificada para creación de documentos, presentaciones y tableros.\nSoporte para múltiples lenguajes: Python, R, Julia.\n\nInstalación y Configuración Básica\n\nRequisitos del sistema.\nPasos para la instalación.\n\nEjemplos de Uso en Educación y Ciencia"
+    "section": "Algunas de sus características",
+    "text": "Algunas de sus características\nEspecializado en:\n\nReproducibilidad de resultados\nUso en ciencia de datos (Python, Jupyter Notebook, Julia)\nFormatos modernos\n\n\n\n\n\n\n\nAdvertencia\n\n\nEl PDF ha muerto."
   },
   {
-    "objectID": "index.html#fundamentos-de-chatgpt-y-llms",
-    "href": "index.html#fundamentos-de-chatgpt-y-llms",
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
     "title": "Creando tableros con Quarto y ChatGPT",
-    "section": "Fundamentos de ChatGPT y LLMs",
-    "text": "Fundamentos de ChatGPT y LLMs\n\n¿Qué es ChatGPT?\n\nBreve historia y evolución de los Modelos de Lenguaje de Gran Escala (LLMs).\nCapacidades actuales y aplicaciones.\n\nIntegración de LLMs en Flujos de Trabajo\n\nGeneración de código.\nAsistencia en redacción y documentación.\n\nLimitaciones y Consideraciones Éticas\n\nSesgos en los datos.\nDependencia y verificación de información."
+    "section": "",
+    "text": "Prompt No. 1\n\n\nYa tengo Python, Quarto y VSCode con la extensión de Quarto instalada. \n¿Cuál sería el primer paso para  crear un tablero \ncon un conjunto de datos que ya tengo? \nEs la primera vez que uso Quarto, dame instrucciones detalladas."
   },
   {
-    "objectID": "index.html#taller-práctico-creación-de-un-tablero-con-quarto-y-chatgpt",
-    "href": "index.html#taller-práctico-creación-de-un-tablero-con-quarto-y-chatgpt",
+    "objectID": "index.html#explora",
+    "href": "index.html#explora",
     "title": "Creando tableros con Quarto y ChatGPT",
-    "section": "Taller Práctico: Creación de un Tablero con Quarto y ChatGPT",
-    "text": "Taller Práctico: Creación de un Tablero con Quarto y ChatGPT\n\nPaso 1: Configuración del Proyecto\n\nCreación de un nuevo proyecto en Quarto.\nEstructura de directorios y archivos.\n\nPaso 2: Generación de Contenido con ChatGPT\n\nUso de ChatGPT para esbozar el contenido del tablero.\nGeneración de código para análisis de datos (Python/R).\n\nPaso 3: Integración y Visualización de Datos\n\nImportación de conjuntos de datos.\nCreación de visualizaciones interactivas (gráficos, mapas).\n\nPaso 4: Personalización y Estilo\n\nTemas y estilos en Quarto.\nAñadir elementos interactivos y widgets.\n\nDiscusión Sobre Limitaciones Encontradas\n\nCalidad y exactitud del código generado por ChatGPT.\nEstrategias para solucionar problemas y depurar."
+    "section": "Explora",
+    "text": "Explora\nCrea un archivo 001_dashboard.qmd y agrega lo siguiente:\n--- \ntitle: \"Emisiones de CO2 \" \nauthor: \"G. Barrios\" \nformat: dashboard\n--- \n\n\n## Uno\nTexto UNO\n\n## Dos\n\nTexto DOS\nAbre 001_dashboard.qmd con VSCode\nEjecuta Preview Ctrl + Shift + K"
   },
   {
-    "objectID": "index.html#conclusiones-y-sesión-de-preguntas",
-    "href": "index.html#conclusiones-y-sesión-de-preguntas",
+    "objectID": "index.html#cambia",
+    "href": "index.html#cambia",
     "title": "Creando tableros con Quarto y ChatGPT",
-    "section": "Conclusiones y Sesión de Preguntas",
-    "text": "Conclusiones y Sesión de Preguntas\n\nResumen de Aprendizajes Clave\n\nBeneficios de combinar Quarto y ChatGPT.\nImportancia de entender las limitaciones de los LLMs.\n\nPreguntas y Respuestas\n\nEspacio para resolver dudas y compartir experiencias.\n\nRecursos Adicionales\n\nMateriales de apoyo y lecturas recomendadas.\nContacto para seguimiento y consultas."
+    "section": "Cambia",
+    "text": "Cambia\n¿Qué diferencias notas al cambiar esto?\n--- \ntitle: \"Emisiones de CO2 \" \nauthor: \"G. Barrios\" \nformat: dashboard\n--- \n\n# Uno\nTexto UNO\n\n# Dos\nTexto DOS\nAbre 001_dashboard.qmd con VSCode\nEjecuta Preview Ctrl + Shift + K"
   },
   {
-    "objectID": "index.html#gracias-por-tu-atención",
-    "href": "index.html#gracias-por-tu-atención",
+    "objectID": "index.html#prompt-2",
+    "href": "index.html#prompt-2",
     "title": "Creando tableros con Quarto y ChatGPT",
-    "section": "Gracias por tu Atención",
-    "text": "Gracias por tu Atención\n\n¡Espero que este taller te sea de gran utilidad!\nContacto: tu_correo@ejemplo.com\n\nNotas:\n\nPuedes agregar o modificar el contenido debajo de cada título según tus necesidades.\nPara separar las diapositivas en Quarto, utiliza ---.\nLos títulos de las diapositivas se indican con encabezados de nivel 2 ##.\nPuedes incluir imágenes, código, tablas y más utilizando la sintaxis de Markdown y las extensiones de Quarto.\n\nEjemplo de inclusión de código en una diapositiva:"
+    "section": "Prompt 2",
+    "text": "Prompt 2\n\n\n\n\n\n\n\nPrompt No. 2\n\n\n\nEn el archivo qmd de quarto, quiero crear una grafica \ncon matplotlib de un archivo csv que tiene la \nsiguiente estructura:\n\nEntity,Code,Year,Annual CO₂ emissions\nWorld,OWID_WRL,1750,9305937\nWorld,OWID_WRL,1751,9407229\nWorld,OWID_WRL,1769,12780074\nWorld,OWID_WRL,1770,13097216\n\nQué debo hacer"
   },
   {
-    "objectID": "index.html#ejemplo-de-código-en-python",
-    "href": "index.html#ejemplo-de-código-en-python",
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
     "title": "Creando tableros con Quarto y ChatGPT",
-    "section": "Ejemplo de Código en Python",
-    "text": "Ejemplo de Código en Python\n\nEjemplo de inclusión de una imagen:"
+    "section": "",
+    "text": "Prompt No. 3\n\n\nPidele que la convierta a plotly."
   },
   {
-    "objectID": "index.html#diagrama-del-proceso",
-    "href": "index.html#diagrama-del-proceso",
+    "objectID": "index.html#referencias",
+    "href": "index.html#referencias",
     "title": "Creando tableros con Quarto y ChatGPT",
-    "section": "Diagrama del Proceso",
-    "text": "Diagrama del Proceso\n\n\n\n\n\nLamport, Leslie. 1986. LaTeX: A Document Preparation System. Reading, Massachusetts: Addison-Wesley."
+    "section": "Referencias",
+    "text": "Referencias\n\n\n\n\nLamport, Leslie. 1986. LaTeX: A Document Preparation System. Reading, Massachusetts: Addison-Wesley."
   }
 ]

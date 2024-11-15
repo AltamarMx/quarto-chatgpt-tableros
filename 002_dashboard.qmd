@@ -1,0 +1,74 @@
+--- 
+title: "Emisiones de CO2 en el mundo " 
+author: "G. Barrios" 
+format: dashboard
+--- 
+
+```{python}
+import pandas as pd
+import plotly.express as px
+import matplotlib.pyplot as plt
+
+
+# Cargar los datos desde un archivo CSV
+data = pd.read_csv('data/annual-co2-emissions-per-country.csv')
+
+# Asegurarte de que las columnas 'Year' y 'Annual CO₂ emissions' están en el formato correcto
+data['Year'] = pd.to_numeric(data['Year'])
+data['Annual CO₂ emissions'] = pd.to_numeric(data['Annual CO₂ emissions'])
+
+```
+
+
+
+# Uno
+```{python}
+
+# Crear una figura y un eje
+plt.figure(figsize=(10, 6))
+plt.plot(data['Year'], data['Annual CO₂ emissions'], label='Emissions', color='blue')
+
+# Añadir título y etiquetas
+plt.title('Emisiones Anuales de CO₂ a Nivel Mundial')
+plt.xlabel('Año')
+plt.ylabel('Emisiones Anuales de CO₂ (en toneladas)')
+
+# Mostrar la leyenda
+plt.legend()
+
+# Mostrar el gráfico
+plt.grid(True)
+plt.show();
+
+```
+
+# Dos
+
+
+```{python}
+
+# Crear la figura usando Plotly Express
+fig = px.line(data, x='Year', y='Annual CO₂ emissions', title='Emisiones Anuales de CO₂ a Nivel Mundial',
+             labels={'Year': 'Año', 'Annual CO₂ emissions': 'Emisiones Anuales de CO₂ (en toneladas)'},
+             markers=True)
+
+# Configurar todo el diseño en un solo paso
+fig.update_layout(
+    title={
+        'text': "Emisiones Anuales de CO₂ a Nivel Mundial",
+        'y':0.9,
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top'},
+    xaxis_title='Año',
+    yaxis_title='Emisiones Anuales de CO₂ (en toneladas)',
+    legend_title='Legend',
+    plot_bgcolor='white',
+    showlegend=True,
+    xaxis=dict(showline=True, linewidth=1, linecolor='black', gridcolor='grey'),
+    yaxis=dict(showline=True, linewidth=1, linecolor='black', gridcolor='grey')
+)
+
+# Mostrar el gráfico
+# fig.show()
+```

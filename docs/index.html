@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
@@ -50,6 +115,7 @@
       margin-left: 2em;
     }  </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-2ff78e2e6999b6200d15f6cb181d00bd.css">
+  <link rel="stylesheet" href="estilo.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -360,12 +426,74 @@ Guillermo Barrios del Valle
 </div>
 
 </section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="panel-tabset" data-group="obs">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Objetivo</a></li><li><a href="#tabset-1-2">Contenido</a></li><li><a href="#tabset-1-3">Producto del taller</a></li></ul>
+<div class="tab-content" data-group="obs">
+<div id="tabset-1-1">
+<p>Explorar una nueva tecnología como Quarto para la creación de tableros de datos, evidenciaremos las limitaciones en la actualización de los LLM como ChatGPT.</p>
+</div>
+<div id="tabset-1-2">
+<ol type="1">
+<li><a href="https://www.python.org/">Instalar Python</a></li>
+<li><a href="https://quarto.org/">Instalar Quarto</a><br>
+</li>
+<li><a href="https://code.visualstudio.com/">Instalar VSCode</a> y la extensión de Quarto</li>
+<li>Crear un tablero básico sobre emisiones de CO2 con la ayuda de ChatGPT</li>
+<li>Publicar el tablero en github</li>
+</ol>
+</div>
+<div id="tabset-1-3">
+<p>Un tablero de datos publicado en github creado con la asistencia de ChatGPT.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="me-presento" class="slide level2">
+<h2>Me presento</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><br></p>
+<p><img data-src="img/Perfil_GuillermoBarrios.jpeg" id="mi-imagen"></p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li>Entusiasta de las tecnologías</li>
+<li>Entusiasta de las visualizaciones</li>
+<li>Entusiasta del café</li>
+<li>Entusiasta de los datos</li>
+<li>Entusiasta de la documentación</li>
+<li>Investigador en el IER-UNAM en mi tiempo libre</li>
+</ul>
+</div></div>
+<p><a href="https://altamarmx.github.io">AltamarMx.github.io</a></p>
+</section>
+<section id="programa-de-especialización-en-python" class="slide level2">
+<h2>Programa de especialización en Python</h2>
+<p><img data-src="img/especializacion.png"> <a href="https://www.coursera.org/specializations/python-cero-analista">Python: de cero a analista</a></p>
+</section>
+<section id="quién-guste-presentarse" class="slide level2">
+<h2>Quién guste presentarse</h2>
+<p>Por el chat, o levantando manita para abrir micro <br> <br></p>
+<ul>
+<li>Nombre</li>
+<li>Carrera</li>
+<li>Lenguaje de programación</li>
+<li>Expectativa sobre el taller</li>
+<li>¿Conocías Quarto?</li>
+</ul>
+</section>
+<section id="qué-es-un-tablero" class="slide level2">
+<h2>¿Qué es un tablero?</h2>
+<p><a href="https://altamarmx.github.io/transicion/"><img data-src="img/tablero.png"></a></p>
+</section>
 <section id="qué-es-quarto" class="slide level2">
 <h2>¿Qué es Quarto?</h2>
 
 <img data-src="img/que_es_quarto.png" class="r-stretch"></section>
 <section id="chatgpt-se-queda-corto" class="slide level2">
 <h2>ChatGPT se queda CORTO</h2>
+<p><br></p>
 <p>Es un sistema de publicación técnico de documentos enfocado:</p>
 <ul>
 <li>ciencia de datos</li>
@@ -376,143 +504,149 @@ Guillermo Barrios del Valle
 </section>
 <section id="algunas-de-sus-características" class="slide level2">
 <h2>Algunas de sus características</h2>
-<p>Me permite escribir en <span class="math inline">\(\LaTeX\)</span>, con ecuaciones como: <span class="math display">\[ \rho c \frac{\partial T}{\partial t} = -k \frac{\partial T}{\partial x^2 } \]</span></p>
+<p><br> <br></p>
+<p>Me permite escribir en <span class="math inline">\(\LaTeX\)</span>, con ecuaciones como:</p>
+<p><span class="math display">\[ \rho c \frac{\partial T}{\partial t} = -k \frac{\partial T}{\partial x^2 } \]</span></p>
 </section>
 <section id="algunas-de-sus-características-1" class="slide level2">
 <h2>Algunas de sus características</h2>
-<p>Hacer referencias bibiográficas como citar al padre de <span class="math inline">\(\LaTeX\)</span> <span class="citation" data-cites="lamport1986latex">(<a href="#/diagrama-del-proceso" role="doc-biblioref" onclick="">Lamport 1986</a>)</span>.</p>
+<p><br> <br> Hacer referencias bibiográficas como citar al padre de <span class="math inline">\(\LaTeX\)</span> <span class="citation" data-cites="lamport1986latex">(<a href="#/referencias" role="doc-biblioref" onclick="">Lamport 1986</a>)</span>.</p>
 </section>
-<section id="bienvenida-e-introducción" class="slide level2">
-<h2>Bienvenida e Introducción</h2>
+<section id="algunas-de-sus-características-2" class="slide level2">
+<h2>Algunas de sus características</h2>
+<p>Creación de:</p>
 <ul>
-<li>Presentación del facilitador y de los participantes.</li>
-<li>Repaso de los objetivos y agenda del taller.</li>
-<li>Expectativas de los asistentes.</li>
+<li>Artículos y reportes</li>
+<li>Presentaciones</li>
+<li>Sitios web</li>
+<li>Libros</li>
+<li><strong>Tableros</strong></li>
 </ul>
 </section>
-<section id="introducción-a-quarto" class="slide level2">
-<h2>Introducción a Quarto</h2>
+<section id="algunas-de-sus-características-3" class="slide level2">
+<h2>Algunas de sus características</h2>
+<p>Especializado en:</p>
 <ul>
-<li><strong>¿Qué es Quarto?</strong>
-<ul>
-<li>Plataforma unificada para creación de documentos, presentaciones y tableros.</li>
-<li>Soporte para múltiples lenguajes: <strong>Python</strong>, <strong>R</strong>, <strong>Julia</strong>.</li>
-</ul></li>
-<li><strong>Instalación y Configuración Básica</strong>
-<ul>
-<li>Requisitos del sistema.</li>
-<li>Pasos para la instalación.</li>
-</ul></li>
-<li><strong>Ejemplos de Uso en Educación y Ciencia</strong></li>
+<li>Reproducibilidad de resultados</li>
+<li>Uso en ciencia de datos (Python, Jupyter Notebook, Julia)</li>
+<li>Formatos modernos</li>
 </ul>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Advertencia</strong></p>
+</div>
+<div class="callout-content">
+<p>El PDF ha muerto.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="fundamentos-de-chatgpt-y-llms" class="slide level2">
-<h2>Fundamentos de ChatGPT y LLMs</h2>
-<ul>
-<li><strong>¿Qué es ChatGPT?</strong>
-<ul>
-<li>Breve historia y evolución de los Modelos de Lenguaje de Gran Escala (LLMs).</li>
-<li>Capacidades actuales y aplicaciones.</li>
-</ul></li>
-<li><strong>Integración de LLMs en Flujos de Trabajo</strong>
-<ul>
-<li>Generación de código.</li>
-<li>Asistencia en redacción y documentación.</li>
-</ul></li>
-<li><strong>Limitaciones y Consideraciones Éticas</strong>
-<ul>
-<li>Sesgos en los datos.</li>
-<li>Dependencia y verificación de información.</li>
-</ul></li>
-</ul>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Prompt No.&nbsp;1</strong></p>
+</div>
+<div class="callout-content">
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>Ya tengo Python, Quarto y VSCode con la extensión de Quarto instalada. </span>
+<span id="cb1-2"><a></a>¿Cuál sería el primer paso para  crear un tablero </span>
+<span id="cb1-3"><a></a>con un conjunto de datos que ya tengo? </span>
+<span id="cb1-4"><a></a>Es la primera vez que uso Quarto, dame instrucciones detalladas.</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="taller-práctico-creación-de-un-tablero-con-quarto-y-chatgpt" class="slide level2">
-<h2>Taller Práctico: Creación de un Tablero con Quarto y ChatGPT</h2>
-<ul>
-<li><strong>Paso 1: Configuración del Proyecto</strong>
-<ul>
-<li>Creación de un nuevo proyecto en Quarto.</li>
-<li>Estructura de directorios y archivos.</li>
-</ul></li>
-<li><strong>Paso 2: Generación de Contenido con ChatGPT</strong>
-<ul>
-<li>Uso de ChatGPT para esbozar el contenido del tablero.</li>
-<li>Generación de código para análisis de datos (<em>Python</em>/<em>R</em>).</li>
-</ul></li>
-<li><strong>Paso 3: Integración y Visualización de Datos</strong>
-<ul>
-<li>Importación de conjuntos de datos.</li>
-<li>Creación de visualizaciones interactivas (gráficos, mapas).</li>
-</ul></li>
-<li><strong>Paso 4: Personalización y Estilo</strong>
-<ul>
-<li>Temas y estilos en Quarto.</li>
-<li>Añadir elementos interactivos y widgets.</li>
-</ul></li>
-<li><strong>Discusión Sobre Limitaciones Encontradas</strong>
-<ul>
-<li>Calidad y exactitud del código generado por ChatGPT.</li>
-<li>Estrategias para solucionar problemas y depurar.</li>
-</ul></li>
-</ul>
+<section id="explora" class="slide level2">
+<h2>Explora</h2>
+<p>Crea un archivo 001_dashboard.qmd y agrega lo siguiente:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="op">---</span> </span>
+<span id="cb2-2"><a></a>title: <span class="st">"Emisiones de CO2 "</span> </span>
+<span id="cb2-3"><a></a>author: <span class="st">"G. Barrios"</span> </span>
+<span id="cb2-4"><a></a><span class="bu">format</span>: dashboard</span>
+<span id="cb2-5"><a></a><span class="op">---</span> </span>
+<span id="cb2-6"><a></a></span>
+<span id="cb2-7"><a></a></span>
+<span id="cb2-8"><a></a><span class="co">## Uno</span></span>
+<span id="cb2-9"><a></a>Texto UNO</span>
+<span id="cb2-10"><a></a></span>
+<span id="cb2-11"><a></a><span class="co">## Dos</span></span>
+<span id="cb2-12"><a></a></span>
+<span id="cb2-13"><a></a>Texto DOS</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Abre <code>001_dashboard.qmd</code> con VSCode</p>
+<p>Ejecuta <code>Preview Ctrl + Shift + K</code></p>
 </section>
-<section id="conclusiones-y-sesión-de-preguntas" class="slide level2">
-<h2>Conclusiones y Sesión de Preguntas</h2>
-<ul>
-<li><strong>Resumen de Aprendizajes Clave</strong>
-<ul>
-<li>Beneficios de combinar Quarto y ChatGPT.</li>
-<li>Importancia de entender las limitaciones de los LLMs.</li>
-</ul></li>
-<li><strong>Preguntas y Respuestas</strong>
-<ul>
-<li>Espacio para resolver dudas y compartir experiencias.</li>
-</ul></li>
-<li><strong>Recursos Adicionales</strong>
-<ul>
-<li>Materiales de apoyo y lecturas recomendadas.</li>
-<li>Contacto para seguimiento y consultas.</li>
-</ul></li>
-</ul>
+<section id="cambia" class="slide level2">
+<h2>Cambia</h2>
+<p>¿Qué diferencias notas al cambiar esto?</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="op">---</span> </span>
+<span id="cb3-2"><a></a>title: <span class="st">"Emisiones de CO2 "</span> </span>
+<span id="cb3-3"><a></a>author: <span class="st">"G. Barrios"</span> </span>
+<span id="cb3-4"><a></a><span class="bu">format</span>: dashboard</span>
+<span id="cb3-5"><a></a><span class="op">---</span> </span>
+<span id="cb3-6"><a></a></span>
+<span id="cb3-7"><a></a><span class="co"># Uno</span></span>
+<span id="cb3-8"><a></a>Texto UNO</span>
+<span id="cb3-9"><a></a></span>
+<span id="cb3-10"><a></a><span class="co"># Dos</span></span>
+<span id="cb3-11"><a></a>Texto DOS</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Abre <code>001_dashboard.qmd</code> con VSCode</p>
+<p>Ejecuta <code>Preview Ctrl + Shift + K</code></p>
 </section>
-<section id="gracias-por-tu-atención" class="slide level2">
-<h2>Gracias por tu Atención</h2>
-<ul>
-<li>¡Espero que este taller te sea de gran utilidad!</li>
-<li><strong>Contacto:</strong> <a href="mailto:tu_correo@ejemplo.com">tu_correo@ejemplo.com</a></li>
-</ul>
-<p><strong>Notas:</strong></p>
-<ul>
-<li>Puedes agregar o modificar el contenido debajo de cada título según tus necesidades.</li>
-<li>Para separar las diapositivas en Quarto, utiliza <code>---</code>.</li>
-<li>Los títulos de las diapositivas se indican con encabezados de nivel 2 <code>##</code>.</li>
-<li>Puedes incluir imágenes, código, tablas y más utilizando la sintaxis de Markdown y las extensiones de Quarto.</li>
-</ul>
-<p><strong>Ejemplo de inclusión de código en una diapositiva:</strong></p>
+<section id="prompt-2" class="slide level2">
+<h2>Prompt 2</h2>
+<p><br></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Prompt No.&nbsp;2</strong></p>
+</div>
+<div class="callout-content">
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a></span>
+<span id="cb4-2"><a></a>En el archivo qmd de quarto, quiero crear una grafica </span>
+<span id="cb4-3"><a></a>con matplotlib de un archivo csv que tiene la </span>
+<span id="cb4-4"><a></a>siguiente estructura:</span>
+<span id="cb4-5"><a></a></span>
+<span id="cb4-6"><a></a>Entity,Code,Year,Annual CO₂ emissions</span>
+<span id="cb4-7"><a></a>World,OWID_WRL,<span class="dv">1750</span>,<span class="dv">9305937</span></span>
+<span id="cb4-8"><a></a>World,OWID_WRL,<span class="dv">1751</span>,<span class="dv">9407229</span></span>
+<span id="cb4-9"><a></a>World,OWID_WRL,<span class="dv">1769</span>,<span class="dv">12780074</span></span>
+<span id="cb4-10"><a></a>World,OWID_WRL,<span class="dv">1770</span>,<span class="dv">13097216</span></span>
+<span id="cb4-11"><a></a></span>
+<span id="cb4-12"><a></a>Qué debo hacer</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="ejemplo-de-código-en-python" class="slide level2">
-<h2>Ejemplo de Código en Python</h2>
-<!-- 
-
-# Importar librerías
-import matplotlib.pyplot as plt
-
-# Datos de ejemplo
-x = [1, 2, 3, 4, 5]
-y = [10, 20, 25, 30, 40]
-
-# Crear gráfico
-plt.plot(x, y)
-plt.title('Gráfico de Ejemplo')
-plt.xlabel('Eje X')
-plt.ylabel('Eje Y')
-plt.show()
-``` -->
-<p><strong>Ejemplo de inclusión de una imagen:</strong></p>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p><br> <br> <br> <br></p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Prompt No.&nbsp;3</strong></p>
+</div>
+<div class="callout-content">
+<p>Pidele que la convierta a plotly.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="diagrama-del-proceso" class="slide level2 smaller scrollable">
-<h2>Diagrama del Proceso</h2>
-<!-- ![Flujo de Trabajo](ruta/a/tu/imagen.png) -->
+<section id="referencias" class="slide level2 smaller scrollable">
+<h2>Referencias</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
@@ -550,7 +684,7 @@ Lamport, Leslie. 1986. <em>LaTeX: A Document Preparation System</em>. Reading, M
       // https://revealjs.com/config/
       Reveal.initialize({
 'controlsAuto': true,
-'previewLinksAuto': false,
+'previewLinksAuto': true,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,

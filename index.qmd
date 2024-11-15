@@ -9,16 +9,90 @@ author:
   afiliation: Instituto de Energías Renovables, UNAM
 format: 
   revealjs:
-    slide-number: c/t  
+    css: estilo.css  # Ruta de tu archivo CSS si es externo
+    slide-number: true
     touch: true
     footer: 2a Jornada de IAGen en Educación UNAM 2024
+    preview-links: auto
 
 bibliography: referencias.bib
----
+--- 
+
+## 
+
+::: {.panel-tabset group="obs"}
+
+
+## Objetivo
+Explorar una nueva tecnología como Quarto para la creación de tableros de datos, evidenciaremos las limitaciones en la actualización de los LLM como ChatGPT.
+
+## Contenido
+1. [Instalar Python](https://www.python.org/)
+1. [Instalar Quarto](https://quarto.org/)  
+1. [Instalar VSCode](https://code.visualstudio.com/) y la extensión de Quarto
+2. Crear un tablero básico sobre emisiones de CO2 con la ayuda de ChatGPT 
+3. Publicar el tablero en github
+
+
+## Producto del taller
+Un tablero de datos publicado en github creado con la asistencia de ChatGPT.
+
+::: 
+
+
+
+## Me presento
+:::: {.columns}
+
+::: {.column width="40%"}
+<br>
+
+![](img/Perfil_GuillermoBarrios.jpeg){#mi-imagen}
+:::
+
+
+::: {.column width="60%"}
+- Entusiasta de las tecnologías
+- Entusiasta de las visualizaciones
+- Entusiasta del café
+- Entusiasta de los datos
+- Entusiasta de la documentación
+- Investigador en el IER-UNAM en mi tiempo libre
+
+:::
+
+::::
+
+[AltamarMx.github.io](https://altamarmx.github.io)
+
+## Programa de especialización en Python
+
+![](img/especializacion.png)
+[Python: de cero a analista](https://www.coursera.org/specializations/python-cero-analista)
+
+
+## Quién guste presentarse
+
+Por el chat, o levantando manita para abrir micro
+<br>
+<br>
+
+- Nombre
+- Carrera
+- Lenguaje de programación
+- Expectativa sobre el taller
+- ¿Conocías Quarto?
+
+## ¿Qué es un tablero?
+[![](img/tablero.png)](https://altamarmx.github.io/transicion/)
+
+
 ## ¿Qué es Quarto? 
 ![](img/que_es_quarto.png)
 
 ## ChatGPT se queda CORTO
+
+<br>
 
 Es un sistema de publicación técnico de documentos enfocado:
 
@@ -29,125 +103,147 @@ Es un sistema de publicación técnico de documentos enfocado:
 
 ## Algunas de sus características
 
+<br>
+<br>
+
 Me permite escribir en $\LaTeX$, con ecuaciones como:
+
 $$ \rho c \frac{\partial T}{\partial t} = -k \frac{\partial T}{\partial x^2 } $$
 
 ## Algunas de sus características
 
+<br>
+<br>
 Hacer referencias bibiográficas como citar al padre de   $\LaTeX$ [@lamport1986latex].
 
 
+## Algunas de sus características
+
+Creación de:
+
+- Artículos y reportes
+- Presentaciones
+- Sitios web
+- Libros
+- **Tableros**
+
+
+## Algunas de sus características
+
+Especializado en:
+
+- Reproducibilidad de resultados
+- Uso en ciencia de datos (Python, Jupyter Notebook, Julia)
+- Formatos modernos 
+
+
+::: {.callout-warning collapse="true"}
+El PDF ha muerto.
+:::
 
 
 
+## 
+
+::: {.callout-tip }
+## Prompt No. 1
+```python 
+Ya tengo Python, Quarto y VSCode con la extensión de Quarto instalada. 
+¿Cuál sería el primer paso para  crear un tablero 
+con un conjunto de datos que ya tengo? 
+Es la primera vez que uso Quarto, dame instrucciones detalladas.
+```
+:::
+
+
+## Explora
+
+Crea un archivo 001_dashboard.qmd y agrega lo siguiente:
+
+```python
+--- 
+title: "Emisiones de CO2 " 
+author: "G. Barrios" 
+format: dashboard
+--- 
+
+
+## Uno
+Texto UNO
+
+## Dos
+
+Texto DOS
+
+```
+
+Abre ```001_dashboard.qmd``` con VSCode 
+
+Ejecuta ```Preview Ctrl + Shift + K```
+
+## Cambia
+
+¿Qué diferencias notas al cambiar esto?
+
+```python
+--- 
+title: "Emisiones de CO2 " 
+author: "G. Barrios" 
+format: dashboard
+--- 
+
+# Uno
+Texto UNO
+
+# Dos
+Texto DOS
+
+```
+
+Abre ```001_dashboard.qmd``` con VSCode 
+
+Ejecuta ```Preview Ctrl + Shift + K```
 
 
 
+## Prompt 2
+
+
+<br>
+
+::: {.callout-tip }
+### Prompt No. 2
+
+```python
+
+En el archivo qmd de quarto, quiero crear una grafica 
+con matplotlib de un archivo csv que tiene la 
+siguiente estructura:
+
+Entity,Code,Year,Annual CO₂ emissions
+World,OWID_WRL,1750,9305937
+World,OWID_WRL,1751,9407229
+World,OWID_WRL,1769,12780074
+World,OWID_WRL,1770,13097216
+
+Qué debo hacer
+
+``` 
+:::
+
+## 
+
+<br>
+<br>
+<br>
+<br>
+
+::: {.callout-tip }
+## Prompt No. 3
+
+Pidele que la convierta a plotly.
+:::
 
 
 
-## Bienvenida e Introducción
-
-- Presentación del facilitador y de los participantes.
-- Repaso de los objetivos y agenda del taller.
-- Expectativas de los asistentes.
-
-
-## Introducción a Quarto
-
-- **¿Qué es Quarto?**
-  - Plataforma unificada para creación de documentos, presentaciones y tableros.
-  - Soporte para múltiples lenguajes: **Python**, **R**, **Julia**.
-- **Instalación y Configuración Básica**
-  - Requisitos del sistema.
-  - Pasos para la instalación.
-- **Ejemplos de Uso en Educación y Ciencia**
-
-
-## Fundamentos de ChatGPT y LLMs
-
-- **¿Qué es ChatGPT?**
-  - Breve historia y evolución de los Modelos de Lenguaje de Gran Escala (LLMs).
-  - Capacidades actuales y aplicaciones.
-- **Integración de LLMs en Flujos de Trabajo**
-  - Generación de código.
-  - Asistencia en redacción y documentación.
-- **Limitaciones y Consideraciones Éticas**
-  - Sesgos en los datos.
-  - Dependencia y verificación de información.
-
-
-
-## Taller Práctico: Creación de un Tablero con Quarto y ChatGPT
-
-- **Paso 1: Configuración del Proyecto**
-  - Creación de un nuevo proyecto en Quarto.
-  - Estructura de directorios y archivos.
-- **Paso 2: Generación de Contenido con ChatGPT**
-  - Uso de ChatGPT para esbozar el contenido del tablero.
-  - Generación de código para análisis de datos (*Python*/*R*).
-- **Paso 3: Integración y Visualización de Datos**
-  - Importación de conjuntos de datos.
-  - Creación de visualizaciones interactivas (gráficos, mapas).
-- **Paso 4: Personalización y Estilo**
-  - Temas y estilos en Quarto.
-  - Añadir elementos interactivos y widgets.
-- **Discusión Sobre Limitaciones Encontradas**
-  - Calidad y exactitud del código generado por ChatGPT.
-  - Estrategias para solucionar problemas y depurar.
-
-
-## Conclusiones y Sesión de Preguntas
-
-- **Resumen de Aprendizajes Clave**
-  - Beneficios de combinar Quarto y ChatGPT.
-  - Importancia de entender las limitaciones de los LLMs.
-- **Preguntas y Respuestas**
-  - Espacio para resolver dudas y compartir experiencias.
-- **Recursos Adicionales**
-  - Materiales de apoyo y lecturas recomendadas.
-  - Contacto para seguimiento y consultas.
-
-
-## Gracias por tu Atención
-
-- ¡Espero que este taller te sea de gran utilidad!
-- **Contacto:** [tu_correo@ejemplo.com](mailto:tu_correo@ejemplo.com)
-
-
-**Notas:**
-
-- Puedes agregar o modificar el contenido debajo de cada título según tus necesidades.
-- Para separar las diapositivas en Quarto, utiliza `---`.
-- Los títulos de las diapositivas se indican con encabezados de nivel 2 `##`.
-- Puedes incluir imágenes, código, tablas y más utilizando la sintaxis de Markdown y las extensiones de Quarto.
-
-**Ejemplo de inclusión de código en una diapositiva:**
-
-
-## Ejemplo de Código en Python
-<!-- 
-```{python}
-# Importar librerías
-import matplotlib.pyplot as plt
-
-# Datos de ejemplo
-x = [1, 2, 3, 4, 5]
-y = [10, 20, 25, 30, 40]
-
-# Crear gráfico
-plt.plot(x, y)
-plt.title('Gráfico de Ejemplo')
-plt.xlabel('Eje X')
-plt.ylabel('Eje Y')
-plt.show()
-``` -->
-
-
-**Ejemplo de inclusión de una imagen:**
-
-
-## Diagrama del Proceso
-
-<!-- ![Flujo de Trabajo](ruta/a/tu/imagen.png) -->
-
+## Referencias
